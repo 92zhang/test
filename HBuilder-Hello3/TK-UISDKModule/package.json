@@ -1,0 +1,43 @@
+{
+    "name": "TK-UISDKModule",
+    "id": "TK-UISDKModule",
+    "version": "4.4.5",
+    "description": "native TKUISDK",
+    "_dp_type":"nativeplugin",
+    "_dp_nativeplugin":{
+        "ios": {
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "TK-UISDKModule",
+                    "class": "TKUISDKModule"
+                }
+            ],
+            "integrateType": "framework",
+            "hooksClass": "TKUISDKPluginProxy",
+            "frameworks": [
+                "TKRoomSDK.framework",
+				"TKWhiteBoard.framework"
+            ],
+            "embedFrameworks": [
+                "TKRoomSDK.framework",
+				"TKWhiteBoard.framework"
+            ],
+            "privacies": [
+                "CameraUsageDescription",
+                "MicrophoneUsageDescription",
+                "PhotoLibraryAdditionsUsageDescription",
+                "PhotoLibraryUsageDescription",
+                "LocationWhenInUseUsageDescription"
+            ],
+            "resources": [
+                "TKResources.bundle",
+				"TKPlayerImage.bundle"
+            ],
+            "deploymentTarget": "10",
+            "validArchitectures": [
+                 "arm64"
+            ]
+        }
+    }
+}
